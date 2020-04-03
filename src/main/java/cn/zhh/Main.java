@@ -33,7 +33,7 @@ public class Main {
                 .ignoreContentType(true)
                 .maxBodySize(10 * 1024 * 1024)
                 .execute();
-        Files.write(Paths.get("C:/Users/SI-GZ-1766/Desktop/jpg/", index + ".jpg"), response.bodyAsBytes());
+        Files.write(Paths.get("C:/Users/win10/Desktop/jpg/", index + ".jpg"), response.bodyAsBytes());
         System.out.println("第" + index + "张图片下载完成！");
     }
 }
